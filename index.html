@@ -12,33 +12,41 @@
 		<header>
 			<div class="container">
 				<br />
-				<h1 class="display-5 animate__animated animate__bounce">⚙️ Módulo de Usuarios</h1>
+				<h1 class="display-5">⚙️ Módulo de Usuarios</h1>
 
-				<br />
+				<hr />
 		</header>
 
 		<main>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4">
-						<img class="img-fluid" src="img/pinos-practica.webp" alt="Pinos" />
+					<div class="col-lg-3">
+						<img class="img-fluid animate__animated animate__backInLeft" src="img/pinos-practica.webp" alt="Pinos" />
 						<br />
 					</div>
 					<div class="col-lg">
 						<p class="lead"><strong>Instrucciones:</strong> Completa todos los campos requeridos marcados con un (*).</p>
 
 						<form id="form">
-							<div class="mb-3">
-								<label for="name" class="form-label">Nombre(s): <strong>*</strong></label>
-								<input id="name" class="form-control" name="name" placeholder="Nombre(s)" required="required" type="text" />
-							</div>
-							<div class="mb-3">
-								<label for="last_name" class="form-label">Apellido Paterno: <strong>*</strong></label>
-								<input id="last_name" class="form-control" name="last_name" placeholder="Apellido Paterno" required="required" type="text" />
-							</div>
-							<div class="mb-3">
-								<label for="maternal_surname" class="form-label">Apellido Materno: <strong>*</strong></label>
-								<input id="maternal_surname" class="form-control" name="maternal_surname" placeholder="Apellido Materno" required="required" type="text" />
+							<div class="row">
+								<div class="col">
+									<div class="mb-3">
+										<label for="name" class="form-label">Nombre(s): <strong>*</strong></label>
+										<input id="name" class="form-control" name="name" placeholder="Nombre(s)" required="required" type="text" />
+									</div>
+								</div>
+								<div class="col">
+									<div class="mb-3">
+										<label for="last_name" class="form-label">Apellido Paterno: <strong>*</strong></label>
+										<input id="last_name" class="form-control" name="last_name" placeholder="Apellido Paterno" required="required" type="text" />
+									</div>
+								</div>
+								<div class="col">
+									<div class="mb-3">
+										<label for="maternal_surname" class="form-label">Apellido Materno: <strong>*</strong></label>
+										<input id="maternal_surname" class="form-control" name="maternal_surname" placeholder="Apellido Materno" required="required" type="text" />
+									</div>
+								</div>
 							</div>
 							<div class="mb-3">
 								<label for="email" class="form-label">Correo electrónico: <strong>*</strong></label>
@@ -61,8 +69,9 @@
 							<br />
 							<br />
 							<div class="text-center">
-								<button class="btn btn-secondary" type="submit">Agregar usuario</button>
+								<button class="btn btn-dark" type="submit">Agregar usuario</button>
 							</div>
+							<br />
 						</form>
 					</div>
 				</div>
