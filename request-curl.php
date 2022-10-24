@@ -7,19 +7,19 @@
 //  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
 // @version 1.0.0
 
-$url = 'https://hooks.slack.com/services/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';
+$url = 'https://hooks.slack.com/services/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';
 $handler = curl_init( $url );
 
 $payload = json_encode( [
 	'color' => 'warning', // Puede tomar los valores good, warning, danger
-	'channel' => '#unimex',
+	'channel' => '#auditoria',
 	'icon_emoji' => 'lizard',
 	'text'	=>	'Práctica 3',
 	'username' => 'kuetspali',
 	'fields' => [
 		[
 			'title' => 'Warning',
-			'value' => 'Valor de texto del campo. Puede contener el marcado estándar de mensajes y debe incluir los habituales caracteres de escape. Puede ser multilínea.',
+			'value' => 'Saludos clase.',
 			'short' => false
 		]
 	],
