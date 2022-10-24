@@ -60,29 +60,7 @@ try {
 	// ================================================================================
 	// 🚨
 	// ================================================================================
-	$url = 'https://hooks.slack.com/services/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';
-	$handler = curl_init( $url );
 
-	$payload = json_encode( [
-		'color' => 'warning', // Puede tomar los valores good, warning, danger
-		'channel' => '#unimex',
-		'icon_emoji' => 'lizard',
-		'text'	=>	'Práctica 3',
-		'username' => 'kuetspali',
-		'fields' => [
-			[
-				'title' => 'Warning',
-				'value' => 'Nombre' . $_POST[ 'name' ],
-				'short' => false
-			]
-		],
-	] );
-
-	curl_setopt( $handler, CURLOPT_POSTFIELDS, $payload );
-	curl_setopt( $handler, CURLOPT_HTTPHEADER, [ 'Content-Type:application/json' ] );
-	curl_setopt( $handler, CURLOPT_RETURNTRANSFER, true );
-	$result = curl_exec( $handler );
-	curl_close( $handler );
 	// ================================================================================
 
 	$output = [
