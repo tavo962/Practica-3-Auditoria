@@ -7,12 +7,12 @@
 //  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
 // @version 1.0.0
 
-$url = 'https://hooks.slack.com/services/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';
+$url = 'https://hooks.slack.com/services/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';
 $handler = curl_init( $url );
 
 $payload = json_encode( [
 	'color' => 'warning', // Puede tomar los valores good, warning, danger
-	'channel' => '#auditoria',
+	'channel' => '#acacya',
 	'icon_emoji' => 'lizard',
 	'text'	=>	'Práctica 3',
 	'username' => 'kuetspali',
